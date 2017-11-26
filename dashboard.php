@@ -29,19 +29,20 @@ $fmt->header->title_page("Dashboard");
   <link rel="stylesheet" href="<? echo _RUTA_WEB_NUCLEO;?>css/bootstrap-datetimepicker.min.css?reload" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="<? echo _RUTA_WEB_NUCLEO;?>css/datetimepicker.adm.css?reload" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="<? echo _RUTA_WEB_NUCLEO;?>css/bootstrap-glyphicons.css" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="<?php echo _RUTA_WEB_NUCLEO; ?>css/nav.adm.css" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="<?php echo _RUTA_WEB_NUCLEO; ?>css/nav-theme.adm.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="<? echo _RUTA_WEB_NUCLEO; ?>css/theme.adm.css?reload" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="<? echo _RUTA_WEB_NUCLEO; ?>css/estilos.adm.css?reload" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="<? echo _RUTA_WEB_NUCLEO; ?>css/icon-font.css?reload" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="<?php echo _RUTA_WEB_NUCLEO; ?>css/nav.adm.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="<?php echo _RUTA_WEB_NUCLEO; ?>css/nav-theme.adm.css" rel="stylesheet" type="text/css">
   <?php
   if(_THEME_DEFAULT_ADMIN){ ?>
-  <link rel="stylesheet" href="<?php echo _RUTA_WEB._THEME_DEFAULT_ADMIN; ?>?reload" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="<?php echo _RUTA_WEB._THEME_DEFAULT_ADMIN; ?>?reload" rel="stylesheet" type="text/css">\
   <?php } ?>
+  <div class='preloader-modulo'></div>
   <?php
   require_once(_RUTA_NUCLEO.'modulos/nav/navbar.adm.php');
   ?>
-  <div class='preloader-modulo'></div>
+  
   <div class="container-fluid content-page" id="content-page">
   <?php
     if ($_GET["m"]){
@@ -79,5 +80,6 @@ $fmt->header->title_page("Dashboard");
   <script type="text/javascript" src="<?php echo _RUTA_WEB_NUCLEO; ?>js/bootstrap-datetimepicker.min.js"></script>
   <script type="text/javascript" src="<?php echo _RUTA_WEB_NUCLEO; ?>js/bootstrap-datetimepicker.es.js"></script>
   <script type="text/javascript" language="javascript" src="<? echo _RUTA_WEB_NUCLEO; ?>js/core.js?reload"></script>
-  </body>
-  </html>
+
+ </body>
+</html>

@@ -36,7 +36,7 @@ echo $fmt->header->header_html();
   ?>
 
   <div class="login-footer">
-    2016-2017 <strong>®</strong> Wappcom &nbsp; | &nbsp;  power <i class="icn-cc"></i> <?php echo _VZ; ?>
+    2016-2017 <strong>®</strong> Wappcom &nbsp; | &nbsp;  power <?php echo _VZ; ?>
   </div>
   <script type="text/javascript" language="javascript" src="<? echo _RUTA_WEB_NUCLEO; ?>js/core.js"></script>
 </body>
